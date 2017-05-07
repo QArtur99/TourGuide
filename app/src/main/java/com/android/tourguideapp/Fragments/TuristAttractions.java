@@ -26,9 +26,11 @@ import java.util.List;
 public class TuristAttractions extends Fragment {
 
     ListView listView;
-    List<ViewObject> viewObjectList =  new ArrayList<>();;
+    List<ViewObject> viewObjectList = new ArrayList<>();
+    ;
     Drawable picture;
     String name, openingHours;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -44,66 +46,64 @@ public class TuristAttractions extends Fragment {
         listView.setAdapter(viewAdapter);
 
 
-
-
-
         return rootView;
     }
-    private void loadData(){
+
+    private void loadData() {
         picture = ContextCompat.getDrawable(getContext(), R.drawable.cytadela);
         name = getContext().getResources().getString(R.string.cytadela);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.krzyze);
         name = getContext().getResources().getString(R.string.krzyze);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.malta);
         name = getContext().getResources().getString(R.string.malta);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.maltanka);
         name = getContext().getResources().getString(R.string.maltanka);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.most);
         name = getContext().getResources().getString(R.string.most);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.parkcytadela);
         name = getContext().getResources().getString(R.string.parkcytadela);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.placwolnosci);
         name = getContext().getResources().getString(R.string.placwolnosci);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.rowery);
         name = getContext().getResources().getString(R.string.rowery);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.teatrwielki);
         name = getContext().getResources().getString(R.string.teatrwielki);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.termy);
         name = getContext().getResources().getString(R.string.termy);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
         picture = ContextCompat.getDrawable(getContext(), R.drawable.zoo);
         name = getContext().getResources().getString(R.string.zoo);
-        openingHours  = getContext().getResources().getString(R.string.cytadelaOH);
-        viewObjectList.add(new ViewObject(picture,name, openingHours));
+        openingHours = getContext().getResources().getString(R.string.cytadelaOH);
+        viewObjectList.add(new ViewObject(picture, name, openingHours));
 
     }
 }

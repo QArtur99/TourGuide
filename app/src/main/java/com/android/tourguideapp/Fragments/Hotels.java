@@ -24,9 +24,11 @@ import java.util.List;
 
 public class Hotels extends Fragment {
     ListView listView;
-    List<ViewObject> viewObjectList =  new ArrayList<>();;
+    List<ViewObject> viewObjectList = new ArrayList<>();
+    ;
     Drawable picture;
     String name, openingHours;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -34,8 +36,6 @@ public class Hotels extends Fragment {
         listView = (ListView) rootView.findViewById(R.id.listView);
 
         loadData();
-
-
 
 
         MainActivity.ObjectComparatorByName comparator = new MainActivity.ObjectComparatorByName();
@@ -46,29 +46,29 @@ public class Hotels extends Fragment {
         return rootView;
     }
 
-    private void loadData(){
+    private void loadData() {
         name = getContext().getResources().getString(R.string.donPrestige);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.hotelGromada);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.puro);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.platinumPalace);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.cityPark);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.sheraton);
-        openingHours  = getContext().getResources().getString(R.string.hotelsOH);
+        openingHours = getContext().getResources().getString(R.string.hotelsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
     }

@@ -1,7 +1,6 @@
 package com.android.tourguideapp;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.CardView;
@@ -13,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.util.List;
 
 /**
@@ -40,15 +38,14 @@ public class ViewAdapter extends ArrayAdapter<ViewObject> {
         TextView name = (TextView) convertView.findViewById(R.id.title);
         TextView openingHours = (TextView) convertView.findViewById(R.id.openingHours);
 
-        if(viewObject.picture != null) {
+        if (viewObject.picture != null) {
             imageView.setImageDrawable(viewObject.picture);
-        }else{
+        } else {
             cardView.setVisibility(View.GONE);
             name.setGravity(Gravity.START);
         }
         name.setText(viewObject.name);
         openingHours.setText(viewObject.openingHours);
-
 
 
         return convertView;

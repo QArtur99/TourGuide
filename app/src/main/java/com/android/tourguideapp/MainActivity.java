@@ -1,6 +1,5 @@
 package com.android.tourguideapp;
 
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -36,9 +35,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState != null) {
-//            getSupportFragmentManager().getFragment(savedInstanceState, "myfragment");
             currentPosition = savedInstanceState.getInt("position");
             setActionBarTitle(currentPosition);
         } else {
@@ -47,13 +47,10 @@ public class MainActivity extends AppCompatActivity {
             setActionBarTitle(currentPosition);
         }
 
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         loadViews();
         navigationView();
         drawerLayout();
         backStackListener();
-
     }
 
     private void loadViews() {
@@ -206,18 +203,6 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt("position", currentPosition);
     }
-
-//    @Override
-//    protected void onPostCreate(Bundle savedInstanceState) {
-//        super.onPostCreate(savedInstanceState);
-//        drawerToggle.syncState();
-//    }
-//
-//    @Override
-//    public void onConfigurationChanged(Configuration newConfig) {
-//        super.onConfigurationChanged(newConfig);
-//        drawerToggle.onConfigurationChanged(newConfig);
-//    }
 
     @Override
     public void onBackPressed() {

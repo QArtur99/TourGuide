@@ -24,9 +24,11 @@ import java.util.List;
 
 public class ShoppingMalls extends Fragment {
     ListView listView;
-    List<ViewObject> viewObjectList =  new ArrayList<>();;
+    List<ViewObject> viewObjectList = new ArrayList<>();
+    ;
     Drawable picture;
     String name, openingHours;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -43,29 +45,30 @@ public class ShoppingMalls extends Fragment {
         listView.setAdapter(viewAdapter);
         return rootView;
     }
-    private void loadData(){
+
+    private void loadData() {
         name = getContext().getResources().getString(R.string.galeriaMalta);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.franowo);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.poznania);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.avenida);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.pestka);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
         name = getContext().getResources().getString(R.string.staryBrowar);
-        openingHours  = getContext().getResources().getString(R.string.shoppingMallsOH);
+        openingHours = getContext().getResources().getString(R.string.shoppingMallsOH);
         viewObjectList.add(new ViewObject(name, openingHours));
 
     }
