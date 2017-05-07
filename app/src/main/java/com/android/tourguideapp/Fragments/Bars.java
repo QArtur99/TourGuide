@@ -25,8 +25,6 @@ import java.util.List;
 public class Bars extends Fragment {
     ListView listView;
     List<ViewObject> viewObjectList = new ArrayList<>();
-    ;
-    Drawable picture;
     String name, openingHours;
 
     @Nullable

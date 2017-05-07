@@ -25,8 +25,6 @@ import java.util.List;
 public class ShoppingMalls extends Fragment {
     ListView listView;
     List<ViewObject> viewObjectList = new ArrayList<>();
-    ;
-    Drawable picture;
     String name, openingHours;
 
     @Nullable

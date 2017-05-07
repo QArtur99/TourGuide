@@ -27,7 +27,6 @@ public class TuristAttractions extends Fragment {
 
     ListView listView;
     List<ViewObject> viewObjectList = new ArrayList<>();
-    ;
     Drawable picture;
     String name, openingHours;
 
