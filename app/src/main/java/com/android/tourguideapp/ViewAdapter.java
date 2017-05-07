@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 /**
  * Created by ART_F on 2017-05-07.
  */
@@ -30,25 +33,39 @@ public class ViewAdapter extends ArrayAdapter<ViewObject> {
 
         ViewObject viewObject = getItem(position);
 
+        ViewHolder holder;
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.listview_item, parent, false);
+            holder = new ViewHolder(convertView);
+            convertView.setTag(holder);
+        }else{
+            holder = (ViewHolder) convertView.getTag();
         }
-        CardView cardView = (CardView) convertView.findViewById(R.id.cardView);
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.itemImage);
-        TextView name = (TextView) convertView.findViewById(R.id.title);
-        TextView openingHours = (TextView) convertView.findViewById(R.id.openingHours);
+
 
         if (viewObject.picture != null) {
-            imageView.setImageDrawable(viewObject.picture);
+            holder.imageView.setImageDrawable(viewObject.picture);
         } else {
-            cardView.setVisibility(View.GONE);
-            name.setGravity(Gravity.START);
+            holder.cardView.setVisibility(View.GONE);
+            holder.name.setGravity(Gravity.START);
         }
-        name.setText(viewObject.name);
-        openingHours.setText(viewObject.openingHours);
+        holder.name.setText(viewObject.name);
+        holder.openingHours.setText(viewObject.openingHours);
 
 
         return convertView;
+    }
+
+    static class ViewHolder {
+        @BindView(R.id.cardView) CardView cardView;
+        @BindView(R.id.itemImage) ImageView imageView;
+        @BindView(R.id.title) TextView name;
+        @BindView(R.id.openingHours) TextView openingHours;
+
+
+        public ViewHolder(View view) {
+            ButterKnife.bind(this, view);
+        }
     }
 
 
