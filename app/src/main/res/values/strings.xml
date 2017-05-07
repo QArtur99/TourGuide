@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Poznan Tour Guide</string>
+    <string name="touristAttractions">Tourist attractions</string>
+    <string name="shoppingMalls">Shopping malls</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="bars">Bars</string>
+    <string name="hotels">Hotels</string>
+    <string name="poznan">Poznan</string>
+    <string name="openingHours">Opening Hours</string>
+
+
+    <string name="closeDrawer">Navigation View Closed</string>
+    <string name="openDrawer">Navigation View Opened</string>
+
+    ///////////////////Turist atraction
+    <string name="cytadelaOH">Mon-Fri 10am - 6pm</string>
+    <string name="cytadela">Cytadela</string>
+    <string name="krzyze">Monument Poznan June 1956</string>
+    <string name="malta">Malta Lake</string>
+    <string name="maltanka">Historical miniature railway</string>
+    <string name="most">Bishop Jordan\'s Bridge</string>
+    <string name="parkcytadela">Park Cytadela</string>
+    <string name="placwolnosci">Freedom square</string>
+    <string name="rowery">Poznan bikes</string>
+    <string name="teatrwielki">Great theater</string>
+    <string name="termy">Aquapark</string>
+    <string name="zoo">Zoo</string>
+
+    ///Bars
+    <string name="barsOH">Fri-Sun 6pm - 4am</string>
+    <string name="piwnaStopaPub">Piwna Stopa Pub</string>
+    <string name="holahola">Hola Hola</string>
+    <string name="blueNote">Blue Note</string>
+    <string name="pijalnia">Pijalnia</string>
+    <string name="iceBar">Ice Bar</string>
+    <string name="prl">PRL Pub</string>
+
+    //Hotels
+    <string name="hotelsOH">Mon-Sun 5am - 11pm</string>
+    <string name="donPrestige">Don Prestige</string>
+    <string name="hotelGromada">Hotel Gromada</string>
+    <string name="puro">Puro</string>
+    <string name="platinumPalace">Platinum Palace</string>
+    <string name="cityPark">City Park</string>
+    <string name="sheraton">Sheraton</string>
+
+    //Shopping Malls
+    <string name="shoppingMallsOH">Mon-Sun 10am - 11pm</string>
+    <string name="galeriaMalta">Galeria Malta</string>
+    <string name="franowo">Franowo</string>
+    <string name="poznania">Poznania</string>
+    <string name="avenida">Avenida</string>
+    <string name="pestka">Pestka</string>
+    <string name="staryBrowar">Stary Browar</string>
+
+
+    //Restaurants
+    <string name="restaurantsOH">Mon-Sun 5am - 11pm</string>
+    <string name="restauracjaToga">Restauracja Toga</string>
+    <string name="tajIndia">Taj India</string>
+    <string name="whyThai">Why Thai</string>
+    <string name="restauracjaRatuszowa">Ratuszowa</string>
+    <string name="figaro">Figaro</string>
+    <string name="cucina">Cucina 88</string>
+
+
+</resources>
